@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About {% endblock title %}
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner/bg1.jpeg' %}" class="d-block  w-100" alt="banner image">
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}

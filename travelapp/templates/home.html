@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" xmlns="http://www.w3.org/1999/html">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner/bg.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+ 		<div class="destinations" id="destinations">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+<div class="section_title">
+    <h1>Popular Destinations</h1>
+     <small class="fs-5">
+             <strong> Travel takes us out of our comfort zones and inspires us to see, taste and try new things.
+         It constantly challenges us, not only to adapt to and explore new surroundings, but also to engage with different people,
+         to embrace adventures as they come and to share new and meaningful experiences with friends and loved ones.</strong></small>
+        </div>
+		</div>
+	</div>
+
+    <div class="container">
+     <br><br>
+        <div class="row container">
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{% url 'place' 'KL' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/kerala.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>Kerala Tourism</b></p></div></a>
+                    </div>
+                </div>
+
+                      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{% url 'place' 'KR' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/golden.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>Karnataka</b></p></div>
+                    </a>
+                    </div>
+                </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg"><a href="{% url 'place' 'ND' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/lotus.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>New Delhi</b></p></div></a>
+                    </div>
+                </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg"><a href="{% url 'place' 'UT' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/tajm.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>Utter Pradesh</b></p></div></a>
+                    </div>
+                </div>
+
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg"><a href="{% url 'place' 'GO' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/goa.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>Goa</b></p></div></a>
+                    </div>
+                </div>
+
+             <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg"><a href="{% url 'place' 'AP' %}">
+                    <div class="goodnessseccont text-center">
+                         <img src="{% static 'images/places/hyderabad.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>Andrapredesh</b></p></div>
+                </a>
+                    </div>
+             </div>
+    </div>
+        </div>
+        </div>
+        </div>
+
+   <div class="col text-center">
+           <div class="section_title">
+                <small class="fs-5">
+                    <h2><mark>SPECIAL ATTRACTIONS</mark></h2></small>
+                <div class="container">
+            <br><br>
+       <div class="row container">
+
+           <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <div class="goodnessseccont text-center"><a href="{% url 'place' 'FR' %}">
+                         <img src="{% static 'images/places/eiffaltower.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                        <p class="mlkpro"><b>France</b></p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                <div class="goodnesssec buttermilk smbg">
+                    <div class="goodnessseccont text-center"><a href="{% url 'place' 'ID' %}">
+                         <img src="{% static 'images/places/indonesia.jpeg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                    <p class="mlkpro"><b>Indonesia</b></p></a></div>
+                </div>
+                </div>
+
+                       <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"
+                         data-wow-duration="1s"  data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay:0.6s; animation-name:none;">
+                           <div class="goodnesssec buttermilk smbg"><a href="{% url 'place' 'GR' %}">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'images/places/greece.jpg' %}" width="250" height="250" class="img-responsive center-block" alt="">
+                                    <p class="mlkpro"><b>Greece</b></p></div></a>
+                            </div>
+
+                  {% for p in pg.paginator.page_range %}
+                           <a href="? page={{p}}">{{p}}</a>
+                  {% endfor %}
+                           <div class="btn btn-light btn-sm {% if pg.number == p %} active {% endif %}">
+                               page{{p}}</a
+                           </div>
+
+                </div>
+            </div>
+
+                </div>
+           </div>
+   </div>
+
+        {% endblock main-content %}

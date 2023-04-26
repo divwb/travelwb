@@ -1,0 +1,24 @@
+ {% extends 'base.html' %}
+{% load static %}
+{% block title %}productdetails {% endblock title %}
+
+{% block main-content %}
+<div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="row flex justify-content-between">
+        <div class="img2 col-lg-5 mt-5">
+            <img src="{{place.image.url}}"
+                 class="image col-xs-6
+                 col-sm-12 col-lg-12 mt-3 text-sm-center w-100 h-75"  alt=""/>
+        </div>
+        <div class="productdetail col-lg-5">
+            <h1 style="font-family:Georgia; font-size:50px;">{{place.title}}</h1>
+            <h5>Rs.{{place.offerprice}}/-</h5>
+            <small class="text-decoration-line-through text-muted fs-5"><del>Rs.{{place.price}}/-</del> </small>
+                <ul class="fs-7" style="font-family: Rajdhani;">
+                    <li>{{place.description}}</li></ul>
+                <a href="{% url 'bookingdetail' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Book Now</a>
+        </div>
+                </div>
+            </div>
+
+   {% endblock main-content %}

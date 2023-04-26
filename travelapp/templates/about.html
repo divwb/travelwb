@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About {% endblock title %}
+{% block banner-slider %}
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner/bg.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+     </div>
+ </div>
+{% endblock banner-slider %}
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">This is a public travel agency having its registered and corporate office at Kerala. The agency was incorporated in the year 2022 and service commenced in 2023.
+        this is one of the fastest growing Public travel agency in Kerala.</p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">A travel agency is a private retailer or public service that provides travel and tourism-related services to the general public on behalf of accommodation or travel suppliers to offer different kinds of travelling packages for each destination..</p>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}
